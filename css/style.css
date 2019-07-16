@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=B612+Mono|Architects+Daughter|Catamaran|Economica|Orbitron|Noto+Serif|Sanchez|Noto+Sans+HK|Rajdhani|Monda|Courgette|Permanent+Marker|Righteous&display=swap');
+
+
+
+
+/*FIRST-HOME-SECTION CHILDREN*/
+.name{
+    font-size: 60px;
+    flex: 1;
+    text-align: center;
+    font-family: 'Architects Daughter', 'B612 Mono', monospace;
+}
+.role{
+    font-size: 30px;
+    flex: 1;
+    text-align: center;
+    font-family: 'Architects Daughter', 'B612 Mono', monospace;
+}
+
+
+/*A LINKS AND LISTS*/
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.nav-links{
+    text-decoration: none;
+    
+    /*display: inline;*/
+    flex: 1;
+    text-align: center;
+    
+    font-family: 'B612 Mono', monospace;
+   }
+
+
+.nav-links:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*BODY*/
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*VIEWS*/
+
+.first-view{
+
+    background-color: #FFFED6;
+    height: 100vh;
+}
+.second-view{
+    background-color: #E8E2B7;
+    min-height: 30rem;
+}
+.third-view{
+    min-height: 30rem;
+    background-color: #FFFED6;
+}
+.fourth-view{
+    min-height: 15rem;
+    background-color: #E8E2B7;
+}
+
+
+/*SECTIONS*/
+
+.first-home-section{
+    display: flex;
+    flex-direction: column;
+    margin: 20% 0;   
+}
+.first-portfolio-section{
+    display: flex;
+}
+.second-portfolio-section{
+    display: flex;
+    flex-direction: row;
+}
+.first-about-section{
+    display: flex;
+}
+.first-contact-section{
+    display: flex;
+}
+
+/*PARAGRAPH CONTENT*/
+
+.basic{
+    flex: 1;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+.basic-contact{
+    flex: 1;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+}
+.a-basic{
+    flex: 1;
+    text-align: center;
+    margin-top: 12rem;
+}
+.b-basic{
+    flex: 1;
+    text-align: center;
+    margin-top: 12rem;
+
+}
+.c-basic{
+    flex: 1;
+    text-align: center;
+    margin-top: 12rem;
+}
+
+/*SECTION TITLES*/
+
+.portfolio-title{
+    font-weight: 200;
+    font-family: 'B612 Mono', monospace;
+    margin: 5% auto 0%;
+}
+.about-title{
+    font-weight: 200;
+    font-family: 'B612 Mono', monospace;
+    margin: 5% auto 0%;
+}
+.contact-title{
+    font-weight: 200;
+    font-family: 'B612 Mono', monospace;
+    margin: 5% auto 0%;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger{
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height:45px;
+    padding:5px 15px 0px 15px;
+    color:#999;
+    border:0;
+    font-size:1.4em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+  .cross{
+    background:none;
+    position:absolute;
+    top:0px;
+    right:0;
+    padding:7px 15px 0px 15px;
+    color:#999;
+    border:0;
+    font-size:3em;
+    line-height:65px;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+
+/*MEDIA QUERIES*/
+@media (min-width: 768px){
+    .nav-links{
+        text-decoration: none;
+        color: black;
+        display: inline;
+        flex: 1;
+        text-align: center;
+        border: 1pt black solid;
+        padding: 3rem;
+        letter-spacing: 3px;
+        font-family: 'B612 Mono', monospace;
+    }
+
+    ul{
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .hamburger{
+        display: none;
+        z-index: -1;
+    }
+    .cross{
+        display: none;
+        z-index: -1;
+    }
+
+} 
+
+
+
+
+
+
+
+

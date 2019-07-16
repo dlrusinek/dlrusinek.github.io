@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <div class="first-view">
+        <header>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </header>
+        <nav>
+            <ul>
+                <a class="nav-links" href="#">HOME</a>
+                <a class="nav-links" href="#">PORTFOLIO</a>
+                <a class="nav-links" href="#">ABOUT</a>
+                <a class="nav-links" href="#">CONTACT</a>
+            </ul>
+        </nav>
+        <div id="home"> 
+            <section class="first-home-section">
+                <p class="name">Devon Rusinek</p>
+                <p class="role">Web Developer</p>
+            </section>
+        </div>
+    </div>
+    <div class="second-view">
+        <div id="portfolio">
+            <section class="first-portfolio-section">
+                <h1 class="portfolio-title">portfolio</h1>
+            </section>
+            <section class="second-portfolio-section">
+                <p class="a-basic">ablah blah blah</p>
+                <p class="b-basic">bblah blah blah</p>
+                <p class="c-basic">cblah blah blah</p>
+            </section>
+        </div>
+    </div>
+    <div class="third-view">
+        <div id="about">
+            <section class="first-about-section">
+                <h1 class="about-title">about</h1>
+            </section>
+            <section class="second-about-section">
+                <p class="basic">blah blah blah</p>
+            </section>
+        </div>
+    </div>
+    <div class="fourth-view">
+        <div id="contact">
+            <section class="first-contact-section">
+                <h1 class="contact-title">contact</h1>
+            </section>
+            <section class="second-contact-section">
+                <p class="basic-contact">devonrusinek@gmail.com</p>
+            </section>
+        </div>
+    </div>
+</div>
+<script>
+    /*
+    document.addEventListener('DOMContentLoaded', init);
+
+    function init(){
+        let query =  window.matchMedia("(min-width: 768px)");
+
+        if(query.matches){
+            document.querySelector("nav").show();
+        }
+    }*/
+</script>
+<script>
+        $( document ).ready(function() {
+
+            $( ".cross" ).hide();
+            /*
+            if $("(min-width: 768)") == true {
+                $( "nav" ).hide();
+            } else {
+                $( "nav" ).show();
+            }*/
+            $(".cross").toggle() != $(".hamburger").toggle();
+            $( ".hamburger" ).click(function() {
+                $( "nav" ).slideToggle( "slow", function() {
+                    $( ".hamburger" ).hide();
+                    $( ".cross" ).show();
+                });
+            });
+
+            $( ".cross" ).click(function() {
+                $( "nav" ).slideToggle( "slow", function() {
+                    $( ".cross" ).hide();
+                    $( ".hamburger" ).show();
+                });
+            });
+
+        });
+</script>
+</body>
+</html>
